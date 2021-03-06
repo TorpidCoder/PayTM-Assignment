@@ -22,7 +22,7 @@ stationDataFrame = spark \
     .read \
     .format("csv") \
     .option("header", "true") \
-    .load("/Users/sahilnagpal/Downloads/paytmteam-de-weather-challenge-beb4fc53605c/stationlist.csv")
+    .load("../../paytmteam-de-weather-challenge-beb4fc53605c/stationlist.csv")
 
 # step-1
 # loading the countries data
@@ -31,7 +31,7 @@ countriesDataFrame = spark \
     .read \
     .format("csv") \
     .option("header", "true") \
-    .load("/Users/sahilnagpal/Downloads/paytmteam-de-weather-challenge-beb4fc53605c/countrylist.csv")
+    .load("../../paytmteam-de-weather-challenge-beb4fc53605c/countrylist.csv")
 
 # step-1
 # loading the weather data
@@ -40,7 +40,7 @@ weatherDataFrame = spark \
     .read \
     .format("csv") \
     .option("header", "true") \
-    .load("/Users/sahilnagpal/Downloads/paytmteam-de-weather-challenge-beb4fc53605c/data/2019/*.csv.gz")
+    .load("../../paytmteam-de-weather-challenge-beb4fc53605c/data/2019/*.csv.gz")
 
 # ------------------------------------Question-1---------------------------------------------------------
 # Which country had the hottest average mean temperature over the year?
